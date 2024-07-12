@@ -1,0 +1,50 @@
+Dec 11 18:19:39.742 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 11 18:19:39.742 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39077.
+Dec 11 18:19:39.754 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 18:19:39.754 HYPERVISOR: exec_cmd: hypervisor working_dir /home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips 
+Dec 11 18:19:39.754 GENERAL: working_dir=/home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips
+Dec 11 18:19:39.754 HYPERVISOR: exec_cmd: hypervisor working_dir /home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips/9a0b2689-04dd-418e-9d64-3e30f0e21837 
+Dec 11 18:19:39.754 GENERAL: working_dir=/home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips/9a0b2689-04dd-418e-9d64-3e30f0e21837
+Dec 11 18:19:39.755 HYPERVISOR: exec_cmd: vm create R6 6 c3725 
+Dec 11 18:19:39.755 VM: VM R6 created.
+Dec 11 18:19:39.755 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5021 
+Dec 11 18:19:39.755 HYPERVISOR: exec_cmd: c3725 get_mac_addr R6 
+Dec 11 18:19:39.756 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
+Dec 11 18:19:39.756 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 18:19:39.756 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x602467a4 
+Dec 11 18:19:39.757 HYPERVISOR: exec_cmd: vm set_ios R6 /home/francisco/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Dec 11 18:19:39.757 HYPERVISOR: exec_cmd: c3725 set_mac_addr R6 c206.161b.0000 
+Dec 11 18:19:39.758 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
+Dec 11 18:19:39.759 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 18:19:39.767 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-4T 
+Dec 11 18:19:39.767 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 18:19:39.768 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 16 WIC-2T 
+Dec 11 18:19:39.768 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 18:19:39.768 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 32 WIC-2T 
+Dec 11 18:19:41.713 HYPERVISOR: exec_cmd: nio create_udp udp-efd74df1-baf7-48b4-8759-f534c09b0284 10022 127.0.0.1 10023 
+Dec 11 18:19:41.926 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-efd74df1-baf7-48b4-8759-f534c09b0284 
+Dec 11 18:19:41.926 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 18:19:42.047 HYPERVISOR: exec_cmd: nio create_udp udp-141a7de7-66c5-43fd-98f7-e9905aae8977 10026 127.0.0.1 10027 
+Dec 11 18:19:42.049 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-141a7de7-66c5-43fd-98f7-e9905aae8977 
+Dec 11 18:19:42.049 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 18:19:44.754 HYPERVISOR: exec_cmd: nio create_udp udp-02bc6bd6-4cb5-4e04-bef0-8682e8120c68 10098 127.0.0.1 10099 
+Dec 11 18:19:44.755 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 1 udp-02bc6bd6-4cb5-4e04-bef0-8682e8120c68 
+Dec 11 18:19:44.756 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 19:10:40.636 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Dec 11 19:10:40.637 HYPERVISOR: exec_cmd: vm set_ghost_file R6 /home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips/c3725-adventerprisek9-mz.124-25d.image-128.ghost 
+Dec 11 19:10:40.645 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 19:10:40.647 HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
+Dec 11 19:10:40.647 HYPERVISOR: exec_cmd: vm start R6 
+Dec 11 23:26:50.826 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 23:26:50.827 HYPERVISOR: exec_cmd: vm stop R6 
+Dec 11 23:26:50.944 VM: VM R6 shutdown.
+Dec 11 23:26:50.945 HYPERVISOR: exec_cmd: vm extract_config R6 
+Dec 11 23:27:04.482 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 23:27:04.482 HYPERVISOR: exec_cmd: vm extract_config R6 
+Dec 11 23:27:04.877 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 11 23:27:04.878 HYPERVISOR: exec_cmd: vm extract_config R6 
+Dec 11 23:27:04.878 HYPERVISOR: exec_cmd: vm delete R6 
+Dec 11 23:27:04.878 VM: VM R6 destroyed.
+Dec 11 23:27:04.879 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 11 23:27:05.379 HYPERVISOR: Stopped.
+Dec 11 23:27:05.379 GENERAL: reset done.

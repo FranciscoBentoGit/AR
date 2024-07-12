@@ -1,0 +1,47 @@
+Dec 11 18:19:39.799 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Dec 11 18:19:39.800 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54493.
+Dec 11 18:19:39.812 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 11 18:19:39.813 HYPERVISOR: exec_cmd: hypervisor working_dir /home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips 
+Dec 11 18:19:39.813 GENERAL: working_dir=/home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips
+Dec 11 18:19:39.813 HYPERVISOR: exec_cmd: hypervisor working_dir /home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips/5deb8412-8bb0-4158-bd54-24339a8a00c6 
+Dec 11 18:19:39.813 GENERAL: working_dir=/home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips/5deb8412-8bb0-4158-bd54-24339a8a00c6
+Dec 11 18:19:39.813 HYPERVISOR: exec_cmd: vm create R7 7 c3725 
+Dec 11 18:19:39.813 VM: VM R7 created.
+Dec 11 18:19:39.813 HYPERVISOR: exec_cmd: vm set_con_tcp_port R7 5022 
+Dec 11 18:19:39.814 HYPERVISOR: exec_cmd: c3725 get_mac_addr R7 
+Dec 11 18:19:39.814 HYPERVISOR: exec_cmd: vm set_disk0 R7 0 
+Dec 11 18:19:39.814 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 18:19:39.815 HYPERVISOR: exec_cmd: vm set_idle_pc R7 0x602467a4 
+Dec 11 18:19:39.815 HYPERVISOR: exec_cmd: vm set_ios R7 /home/francisco/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Dec 11 18:19:39.816 HYPERVISOR: exec_cmd: c3725 set_mac_addr R7 c207.162a.0000 
+Dec 11 18:19:39.816 HYPERVISOR: exec_cmd: vm set_nvram R7 256 
+Dec 11 18:19:39.816 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 18:19:39.817 HYPERVISOR: exec_cmd: vm slot_add_binding R7 1 0 NM-1FE-TX 
+Dec 11 18:19:39.817 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 18:19:39.817 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 16 WIC-2T 
+Dec 11 18:19:39.818 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 18:19:39.818 HYPERVISOR: exec_cmd: vm slot_add_binding R7 0 32 WIC-2T 
+Dec 11 18:19:42.400 HYPERVISOR: exec_cmd: nio create_udp udp-c3ce94bf-29ea-43d8-9a4d-c81782af4316 10032 127.0.0.1 10033 
+Dec 11 18:19:42.628 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 1 udp-c3ce94bf-29ea-43d8-9a4d-c81782af4316 
+Dec 11 18:19:42.628 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 18:19:42.770 HYPERVISOR: exec_cmd: nio create_udp udp-31021bb0-f10c-4bab-8653-c0c8c4ca02a2 10038 127.0.0.1 10039 
+Dec 11 18:19:42.772 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R7 0 0 udp-31021bb0-f10c-4bab-8653-c0c8c4ca02a2 
+Dec 11 18:19:42.772 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 19:10:40.865 HYPERVISOR: exec_cmd: vm set_ghost_status R7 2 
+Dec 11 19:10:40.866 HYPERVISOR: exec_cmd: vm set_ghost_file R7 /home/francisco/GNS3/projects/Projeto1Grupo2/project-files/dynamips/c3725-adventerprisek9-mz.124-25d.image-128.ghost 
+Dec 11 19:10:40.866 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 19:10:40.868 HYPERVISOR: exec_cmd: vm set_config R7 configs/i7_startup-config.cfg 
+Dec 11 19:10:40.871 HYPERVISOR: exec_cmd: vm start R7 
+Dec 11 23:26:50.932 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 23:26:50.932 HYPERVISOR: exec_cmd: vm stop R7 
+Dec 11 23:26:51.038 VM: VM R7 shutdown.
+Dec 11 23:26:51.039 HYPERVISOR: exec_cmd: vm extract_config R7 
+Dec 11 23:27:04.483 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 23:27:04.485 HYPERVISOR: exec_cmd: vm extract_config R7 
+Dec 11 23:27:04.904 HYPERVISOR: exec_cmd: vm get_status R7 
+Dec 11 23:27:04.904 HYPERVISOR: exec_cmd: vm extract_config R7 
+Dec 11 23:27:04.905 HYPERVISOR: exec_cmd: vm delete R7 
+Dec 11 23:27:04.905 VM: VM R7 destroyed.
+Dec 11 23:27:04.906 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 11 23:27:05.318 HYPERVISOR: Stopped.
+Dec 11 23:27:05.318 GENERAL: reset done.
